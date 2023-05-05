@@ -5,6 +5,7 @@ const _ = require("lodash");
 const date = require(__dirname + "/date.js");
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 // const items = ["Buy food", "Make food", "Eat food"];
 // const workItems = [];
@@ -165,6 +166,6 @@ app.get("/about", function (req, res) {
   res.render("about");
 });
 
-app.listen(3000, function () {
+app.listen(port, function () {
   console.log("Server started on port 3000");
 });

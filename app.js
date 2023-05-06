@@ -19,7 +19,7 @@ app.use(express.static("public"));
 main().catch((err) => console.log(err));
 async function main() {
   await mongoose.connect(
-    "mongodb+srv://admin-christel:PhilMilLil33@cluster0.shbhwfa.mongodb.net/todolistDB"
+    "mongodb+srv://admin-christel:PhilMilLil33@cluster0.1xmekav.mongodb.net/todolistDB"
   );
 }
 
@@ -167,5 +167,5 @@ app.get("/about", function (req, res) {
 });
 
 app.listen(port, function () {
-  console.log("Server started on port 3000");
+  console.log("Server has started successfully");
 });
